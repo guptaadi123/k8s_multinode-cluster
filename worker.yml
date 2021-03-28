@@ -1,0 +1,7 @@
+- hosts: worker
+  vars_prompt:
+   - name: token
+     prompt: enter token
+     private: no
+  roles:
+   - k8s_workernode
